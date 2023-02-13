@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+:root {
+  --primary-dark: #0e185f;
+  --secondary-dark: #2fa4ff;
+  --primary-text: #00ffdd;
+  --accent-color: #e8ffc2;
+}
+/* 
+  Palette Color
+
+  #03001C - Dark Black
+  #301E67 - Dark Blue
+  #301E67 - Light Blue
+  #B6EADA - Accent Green
+*/
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.login_form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+.login_form > * {
+  margin-bottom: 10px;
+}
+
+.login_title {
+  margin-bottom: 30px;
+}
+
+.btn_login {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #607eaa;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.username_input {
+  width: 50%;
+  padding: 10px;
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.chat_sidebar {
+  height: 100%;
+  background-color: var(--primary-dark);
+  color: #fff;
+  font-weight: bold;
+  padding: 30px;
+  flex: 0.2;
+  border-right: 2px solid var(--secondary-dark);
+}
+.chat_header {
+  margin: 30px 0px 20px 0px;
+}
+.chat_users {
+  margin-bottom: 10px;
+  color: var(--primary-text);
+  font-size: large;
+}
+
+.chat_main {
+  height: 100%;
+  flex: 0.8;
+}
+
+.footer {
+  /* background-color: blue; */
+  height: 10vh;
+  padding: 10px;
+}
+
+.frmMessage {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.message {
+  width: 80%;
+  /* background-color: green; */
+  /* color: aliceblue; */
+  border-radius: 10px;
+  border: 1px solid green;
+  padding: 10px;
+  /* border: none; */
+  outline: none;
+}
+.btnSend {
+  width: 150px;
+  background-color: green;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: aliceblue;
+}
+
+.btnSend:hover {
+  background-color: rgb(129, 201, 129);
+}
+
+.chat_mainHeader {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--secondary-dark);
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.btnLeaveChat {
+  background-color: var(--accent-color);
+  color: var(--primary-dark);
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.messages_container {
+  width: 100%;
+  height: 80vh;
+  /* background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/51439hd.jpg"); */
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.messages_container > * {
+  margin-bottom: 10px;
+}
+
+.message_chats > p {
+  font-size: 15px;
+}
+
+.message_sent {
+  background-color: var(--primary-dark);
+  max-width: 300px;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  margin-left: auto;
+  font-size: 15px;
+}
+
+.message_received {
+  background-color: var(--secondary-dark);
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.user_received{
+  /* font-size: 30px; */
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
